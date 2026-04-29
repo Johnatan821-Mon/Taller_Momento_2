@@ -1,0 +1,164 @@
+
+============================================================
+clientes_sin_nulos
+============================================================
+Antes  - filas: 60
+Después- filas: 56
+<class 'pandas.DataFrame'>
+Index: 56 entries, 0 to 59
+Data columns (total 11 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   id_cliente      56 non-null     int64  
+ 1   nombre          56 non-null     str    
+ 2   edad            56 non-null     str    
+ 3   ciudad          56 non-null     str    
+ 4   email           56 non-null     str    
+ 5   fecha_registro  56 non-null     str    
+ 6   salario         56 non-null     str    
+ 7   activo          56 non-null     str    
+ 8   puntaje         56 non-null     float64
+ 9   telefono        56 non-null     str    
+ 10  comentarios     56 non-null     str    
+dtypes: float64(1), int64(1), str(9)
+memory usage: 5.2 KB
+
+============================================================
+clientes con edad nula reemplazada por 0
+============================================================
+Antes  - edad nulas: 1
+Después- edad nulas: 0
+<class 'pandas.DataFrame'>
+RangeIndex: 60 entries, 0 to 59
+Data columns (total 11 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   id_cliente      60 non-null     int64  
+ 1   nombre          60 non-null     str    
+ 2   edad            60 non-null     object 
+ 3   ciudad          58 non-null     str    
+ 4   email           60 non-null     str    
+ 5   fecha_registro  60 non-null     str    
+ 6   salario         60 non-null     str    
+ 7   activo          60 non-null     str    
+ 8   puntaje         59 non-null     float64
+ 9   telefono        59 non-null     str    
+ 10  comentarios     60 non-null     str    
+dtypes: float64(1), int64(1), object(1), str(8)
+memory usage: 5.3+ KB
+
+============================================================
+clientes sin duplicados
+============================================================
+Antes  - filas: 60
+Después- filas: 60
+<class 'pandas.DataFrame'>
+RangeIndex: 60 entries, 0 to 59
+Data columns (total 11 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   id_cliente      60 non-null     int64  
+ 1   nombre          60 non-null     str    
+ 2   edad            60 non-null     object 
+ 3   ciudad          58 non-null     str    
+ 4   email           60 non-null     str    
+ 5   fecha_registro  60 non-null     str    
+ 6   salario         60 non-null     str    
+ 7   activo          60 non-null     str    
+ 8   puntaje         59 non-null     float64
+ 9   telefono        59 non-null     str    
+ 10  comentarios     60 non-null     str    
+dtypes: float64(1), int64(1), object(1), str(8)
+memory usage: 5.3+ KB
+
+============================================================
+clientes con tipos de datos corregidos
+============================================================
+Antes  - edad no nulos: 60
+Después- edad no nulos: 59
+Antes  - salario no nulos: 60
+Después- salario no nulos: 58
+<class 'pandas.DataFrame'>
+RangeIndex: 60 entries, 0 to 59
+Data columns (total 11 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   id_cliente      60 non-null     int64  
+ 1   nombre          60 non-null     str    
+ 2   edad            59 non-null     float64
+ 3   ciudad          58 non-null     str    
+ 4   email           60 non-null     str    
+ 5   fecha_registro  60 non-null     str    
+ 6   salario         58 non-null     float64
+ 7   activo          60 non-null     str    
+ 8   puntaje         59 non-null     float64
+ 9   telefono        59 non-null     str    
+ 10  comentarios     60 non-null     str    
+dtypes: float64(3), int64(1), str(7)
+memory usage: 5.3 KB
+
+============================================================
+clientes con datos de texto limpiados (muestra)
+============================================================
+Antes  - ciudad nulas/vacias: 2
+Después- ciudad 'Desconocida': 2
+ id_cliente       nombre  edad       ciudad                 email fecha_registro   salario activo  puntaje   telefono       comentarios
+          1    Ana Perez  23.0       Bogota    ana.perez@mail.com     2026-01-15 2500000.0     SI     88.0 3001234567     cliente nuevo
+          2   Luis Gomez  35.0     Medellin   luis.gomez@mail.com     15/02/2026 3200000.0     NO     91.0 3012345678  compra frecuente
+          3  Camila Ruiz  29.0         Cali      camila.ruiz@mail     2026/03/10 2800000.0     SI     95.0 3023456789    email invalido
+          4    Juan Diaz   0.0 Barranquilla    juan.diaz@mail.com     2026-02-30 3100000.0     NO     84.0 3034567890    fecha invalida
+          5 Sofia Torres  42.0       Bogota sofia.torres@mail.com     2026-01-20 4500000.0     SI     89.0 3045678901 espacio en ciudad
+
+============================================================
+Clientes fecha_registro: Antes / Después (resumen)
+============================================================
+Antes  - no nulos: 60
+Después- no nulos: 56
+
+============================================================
+Ventas fecha_venta: Antes / Después (resumen)
+============================================================
+Antes  - no nulos: 68
+Después- no nulos: 32
+
+============================================================
+clientes y ventas con fechas convertidas
+============================================================
+<class 'pandas.DataFrame'>
+RangeIndex: 60 entries, 0 to 59
+Data columns (total 11 columns):
+ #   Column          Non-Null Count  Dtype         
+---  ------          --------------  -----         
+ 0   id_cliente      60 non-null     int64         
+ 1   nombre          60 non-null     str           
+ 2   edad            59 non-null     float64       
+ 3   ciudad          60 non-null     str           
+ 4   email           60 non-null     str           
+ 5   fecha_registro  56 non-null     datetime64[us]
+ 6   salario         58 non-null     float64       
+ 7   activo          60 non-null     str           
+ 8   puntaje         59 non-null     float64       
+ 9   telefono        59 non-null     str           
+ 10  comentarios     60 non-null     str           
+dtypes: datetime64[us](1), float64(3), int64(1), str(6)
+memory usage: 5.3 KB
+<class 'pandas.DataFrame'>
+RangeIndex: 68 entries, 0 to 67
+Data columns (total 10 columns):
+ #   Column           Non-Null Count  Dtype         
+---  ------           --------------  -----         
+ 0   id_venta         68 non-null     str           
+ 1   id_cliente       68 non-null     int64         
+ 2   fecha_venta      32 non-null     datetime64[us]
+ 3   producto         68 non-null     str           
+ 4   categoria        68 non-null     str           
+ 5   cantidad         68 non-null     int64         
+ 6   precio_unitario  68 non-null     int64         
+ 7   total            68 non-null     int64         
+ 8   canal            68 non-null     str           
+ 9   metodo_pago      68 non-null     str           
+dtypes: datetime64[us](1), int64(4), str(5)
+memory usage: 5.4 KB
+
+c:\Users\DesarrolloDiseno\Documents\Taller_momento_2\limpieza\limpieza.py:66: UserWarning: Parsing dates in %Y-%m-%d format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning.
+  clientes["fecha_registro"] = pd.to_datetime(clientes["fecha_registro"], dayfirst=True, errors='coerce')
