@@ -15,6 +15,7 @@ clientes_sin_nulos = clientes.dropna()
 print_header('clientes_sin_nulos')
 print(f"Antes  - filas: {orig_clientes_rows:d}")
 print(f"Después- filas: {len(clientes_sin_nulos):d}")
+print("Mostrando información del DataFrame 'clientes_sin_nulos' (clientes sin nulos):")
 clientes_sin_nulos.info()
 
 # --- llenar edad nula: Antes/Después ---
@@ -23,6 +24,7 @@ clientes["edad"] = clientes["edad"].fillna(0)
 print_header('clientes con edad nula reemplazada por 0')
 print(f"Antes  - edad nulas: {edad_nulos_antes:d}")
 print(f"Después- edad nulas: {clientes['edad'].isna().sum():d}")
+print("Mostrando información del DataFrame 'clientes' después de rellenar 'edad':")
 clientes.info()
 
 # --- eliminar duplicados: Antes/Después ---
@@ -31,6 +33,7 @@ clientes = clientes.drop_duplicates()
 print_header('clientes sin duplicados')
 print(f"Antes  - filas: {rows_before_dup:d}")
 print(f"Después- filas: {len(clientes):d}")
+print("Mostrando información del DataFrame 'clientes' después de eliminar duplicados:")
 clientes.info()
 
 # --- convertir tipos numéricos: Antes/Después ---
@@ -43,6 +46,7 @@ print(f"Antes  - edad no nulos: {edad_nonnull_antes:d}")
 print(f"Después- edad no nulos: {clientes['edad'].notna().sum():d}")
 print(f"Antes  - salario no nulos: {salario_nonnull_antes:d}")
 print(f"Después- salario no nulos: {clientes['salario'].notna().sum():d}")
+print("Mostrando información del DataFrame 'clientes' después de corregir tipos de datos:")
 clientes.info()
 
 # --- limpieza de texto: Antes/Después (ciudad) ---
@@ -76,6 +80,8 @@ print(f"Después- no nulos: {ventas['fecha_venta'].notna().sum():d}")
 
 
 print_header('clientes y ventas con fechas convertidas')
+print("Mostrando información del DataFrame 'clientes' con fechas convertidas:")
 clientes.info()
+print("Mostrando información del DataFrame 'ventas' con fechas convertidas:")
 ventas.info()
 
