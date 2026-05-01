@@ -1,0 +1,60 @@
+
+Forma del DataFrame `ventas` (shape) - (filas, columnas): (68, 10)
+
+Mostrando información del DataFrame `clientes` (info):
+<class 'pandas.DataFrame'>
+RangeIndex: 60 entries, 0 to 59
+Data columns (total 11 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   id_cliente      60 non-null     int64  
+ 1   nombre          60 non-null     str    
+ 2   edad            59 non-null     str    
+ 3   ciudad          58 non-null     str    
+ 4   email           60 non-null     str    
+ 5   fecha_registro  60 non-null     str    
+ 6   salario         60 non-null     str    
+ 7   activo          60 non-null     str    
+ 8   puntaje         59 non-null     float64
+ 9   telefono        59 non-null     str    
+ 10  comentarios     60 non-null     str    
+dtypes: float64(1), int64(1), str(9)
+memory usage: 5.3 KB
+
+Resumen estadístico del DataFrame `ventas` (describe):
+       id_cliente   cantidad  precio_unitario         total
+count   68.000000  68.000000     6.800000e+01  6.800000e+01
+mean    31.117647   1.308824     2.719118e+05  2.820000e+05
+std     17.962257   0.629080     4.047792e+05  3.995225e+05
+min      1.000000   1.000000     7.000000e+03  1.800000e+04
+25%     15.750000   1.000000     4.350000e+04  6.800000e+04
+50%     31.500000   1.000000     1.100000e+05  1.300000e+05
+75%     47.000000   1.000000     2.675000e+05  2.675000e+05
+max     60.000000   4.000000     2.450000e+06  2.450000e+06
+
+Primeras entradas de la columna `total` en `ventas` (head):
+0    130000
+1    180000
+2    520000
+3    780000
+4    240000
+Name: total, dtype: int64
+
+Primeras entradas de la columna `edad` en `clientes` (head):
+0     23
+1     35
+2     29
+3    NaN
+4     42
+Name: edad, dtype: str
+
+`ventas` con nuevo índice `id_venta` - primeras filas:
+          id_cliente fecha_venta  ...   canal    metodo_pago
+id_venta                          ...                       
+V001               1  2026-04-01  ...  Online        Tarjeta
+V002               2  2026-04-01  ...  Tienda       Efectivo
+V003               3  2026-04-02  ...  Online  Transferencia
+V004               4  2026-04-02  ...  Online        Tarjeta
+V005               5  2026-04-03  ...  Tienda       Efectivo
+
+[5 rows x 9 columns]

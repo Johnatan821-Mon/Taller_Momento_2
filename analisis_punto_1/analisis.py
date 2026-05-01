@@ -7,7 +7,7 @@ clientes = pd.read_csv('cliente.csv')
 
 ventas_reducido = pd.read_csv("ventas.csv", usecols=['producto', 'total'])
 ventas.shape
-print('\nForma del DataFrame `ventas` (filas, columnas):', ventas.shape)
+print('\nForma del DataFrame `ventas` (shape) - (filas, columnas):', ventas.shape)
 
 print('\nMostrando información del DataFrame `clientes` (info):')
 clientes.info()

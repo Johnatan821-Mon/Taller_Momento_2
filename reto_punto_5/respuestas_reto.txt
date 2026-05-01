@@ -1,0 +1,72 @@
+================================================================================
+RESPUESTAS RETO - ANÁLISIS DE VENTAS Y CLIENTES
+================================================================================
+
+1. ¿QUÉ CATEGORÍA GENERA MÁS INGRESOS?
+--------------------------------------------------------------------------------
+Categoría con más ingresos: Tecnologia
+Ingresos totales: $14,290,000
+
+Desglose por categoría:
+  • Tecnologia: $14,290,000
+  • Hogar: $3,653,000
+  • Papeleria: $749,000
+  • Accesorios: $484,000
+
+
+2. ¿QUÉ CANAL VENDE MÁS?
+--------------------------------------------------------------------------------
+Canal con más ventas: Online
+Total vendido: $14,669,000
+
+Desglose por canal:
+  • Online: $14,669,000 (35 transacciones)
+  • Tienda: $4,507,000 (33 transacciones)
+
+
+3. ¿CLIENTES CON MAYOR SALARIO COMPRAN MÁS?
+--------------------------------------------------------------------------------
+Análisis de compras por grupo de salario:
+               Total Vendido  Cantidad Compras  Promedio Compra
+grupo_salario                                                  
+Bajo                  423000                 3        141000.00
+Medio               13687000                48        285145.83
+Alto                 4941000                15        329400.00
+
+Conclusión:
+  • El grupo de salario Medio genera más ingresos
+
+
+4. ¿QUÉ MÉTODO DE PAGO ES MÁS USADO?
+--------------------------------------------------------------------------------
+Método de pago más usado: Efectivo
+Cantidad de transacciones: 30 (44.1%)
+
+Distribución de métodos de pago:
+  • Efectivo: 30 transacciones (44.1%)
+  • Tarjeta: 25 transacciones (36.8%)
+  • Transferencia: 13 transacciones (19.1%)
+
+
+5. ¿TOP 5 CLIENTES CON MÁS COMPRAS?
+--------------------------------------------------------------------------------
+Top 5 clientes con más compras (por gasto total):
+  1. Paula Arias (ID: 21)
+     - Total gastado: $2,515,000.00
+     - Cantidad de compras: 2
+  2. Patricia U (ID: 25)
+     - Total gastado: $1,350,000.00
+     - Cantidad de compras: 1
+  3. Gloria E (ID: 35)
+     - Total gastado: $1,278,000.00
+     - Cantidad de compras: 2
+  4. Ximena V (ID: 52)
+     - Total gastado: $1,090,000.00
+     - Cantidad de compras: 2
+  5. Diana AB (ID: 58)
+     - Total gastado: $1,007,000.00
+     - Cantidad de compras: 2
+
+================================================================================
+FIN DEL REPORTE
+================================================================================
